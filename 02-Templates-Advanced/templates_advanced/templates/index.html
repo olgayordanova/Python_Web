@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+        <h1 class="text-center">All Pythons</h1>
+    <div class="d-flex p-3">
+        {% for python in pythons %}
+            {% include  'python-details.html' with python=python %}
+        {% endfor %}
+    </div>
+{% endblock %}
+
+
+
+
